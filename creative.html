@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SirKit Stevens | Games, Characters, and Worlds</title>
+    <meta name="description" content="Original character IPs, game concepts, AI-augmented art, and retro-futuristic design.">
+    <style>
+        :root{--bg:#0e0e0e;--card:#1a1a1a;--hover:#242424;--text:#e8e2dc;--muted:#8a8580;--accent:#FF7D45;--accent2:#ff9966;--teal:#1281A3;--yellow:#F5D547;--border:#2a2a2a;--mono:'Cascadia Code','Consolas','Courier New',monospace;--sans:'Segoe UI',system-ui,-apple-system,sans-serif;--max:960px}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:var(--sans);line-height:1.6;color:var(--text);background:var(--bg)}
+        a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}
+        .c{max-width:var(--max);margin:0 auto;padding:0 1.5rem}
+        .nav{padding:1.5rem 0;font-family:var(--mono);font-size:.75rem;letter-spacing:.05em}
+        .hdr{padding:2rem 0 3rem;border-bottom:1px solid var(--border)}
+        .hdr h1{font-family:var(--mono);font-size:1.8rem;font-weight:700;color:var(--accent);margin-bottom:.25rem}
+        .hdr .sub{font-family:var(--mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+        .sec{padding:2.5rem 0;border-bottom:1px solid var(--border)}
+        .sec h2{font-family:var(--mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem}
+        .ip{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1.5rem;margin-bottom:1rem}
+        .ip h3{font-family:var(--mono);font-size:.85rem;color:var(--accent);margin-bottom:.25rem}
+        .ip .ih{font-family:var(--mono);font-size:.7rem;color:var(--teal);margin-bottom:.75rem}
+        .ip p{font-size:.95rem;color:var(--muted);margin-bottom:1rem}
+        .ipg{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin-bottom:.75rem}
+        .ipg img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px;background:var(--bg)}
+        .gg{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+        .gc{background:var(--card);border:1px solid var(--border);border-radius:4px;overflow:hidden}
+        .gc img{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--bg);display:block}
+        .gcb{padding:1.25rem}
+        .gc h3{font-family:var(--mono);font-size:.85rem;color:var(--accent);margin-bottom:.25rem}
+        .gc .gr{font-family:var(--mono);font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:.5rem}
+        .gc p{font-size:.9rem;color:var(--muted);line-height:1.5}
+        .gc .st{font-family:var(--mono);font-size:.65rem;color:var(--yellow);margin-top:.5rem}
+        .gm{margin-top:1rem;font-size:.95rem;color:var(--muted)}
+        .pipe{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}
+        .ps{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1.25rem;text-align:center}
+        .ps .sn{font-family:var(--mono);font-size:.65rem;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.5rem}
+        .ps h3{font-family:var(--mono);font-size:.85rem;margin-bottom:.5rem}
+        .ps p{font-size:.8rem;color:var(--muted);line-height:1.4}
+        .ps img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px;margin-bottom:.75rem;background:var(--bg)}
+        .ph{margin-top:1rem;font-size:.9rem;color:var(--muted);font-style:italic}
+        .galg{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem}
+        .galg img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px;background:var(--card)}
+        .gn{margin-top:1rem;font-size:.9rem;color:var(--muted)}
+        .tl{display:flex;flex-wrap:wrap;gap:.5rem}
+        .tt{background:var(--card);border:1px solid var(--border);border-radius:2px;padding:.3rem .75rem;font-family:var(--mono);font-size:.7rem;color:var(--muted)}
+        .av h3{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:.5rem;margin-top:1.5rem}
+        .av h3:first-child{margin-top:0}
+        .av p{font-size:.95rem;color:var(--muted);margin-bottom:.3rem}
+        .av .bl{color:var(--text)}
+        .pg{display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;margin-top:.75rem}
+        .pg p{font-size:.9rem;color:var(--muted)}
+        .pg strong{color:var(--text)}
+        .fq{margin-bottom:1.25rem}
+        .fq h3{font-family:var(--mono);font-size:.75rem;color:var(--text);margin-bottom:.25rem}
+        .fq p{font-size:.9rem;color:var(--muted)}
+        footer{padding:2rem 0;text-align:center}
+        footer p{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;color:var(--muted)}
+        footer .as{margin-top:.5rem;font-size:.8rem}
+        @media(max-width:640px){.gg{grid-template-columns:1fr}.pipe{grid-template-columns:repeat(2,1fr)}.galg{grid-template-columns:repeat(2,1fr)}.ipg{grid-template-columns:repeat(2,1fr)}.pg{grid-template-columns:1fr}.hdr h1{font-size:1.4rem}}
+    </style>
+</head>
+<body>
+<div class="c">
+    <nav class="nav"><a href="index.html">&lt;-- back</a></nav>
+    <header class="hdr">
+        <h1>Games, Characters, and Worlds</h1>
+        <p class="sub">Original IPs, 8 game concepts, and too many ideas for one lifetime.</p>
+    </header>
+
+    <section class="sec">
+        <h2>Original Properties</h2>
+        <div class="ip">
+            <h3>Snuzzlywumps + WumpWear</h3>
+            <div class="ih"><a href="https://instagram.com/snuzzlywumps" target="_blank" rel="noopener">@snuzzlywumps</a> &middot; <a href="https://instagram.com/wumpwear" target="_blank" rel="noopener">@wumpwear</a></div>
+            <p>An original character universe. Weird, round, lovable creatures with more personality than most humans. WumpWear takes them off the screen and into the real world.</p>
+            <div class="ipg">
+                <img src="images/creative/snuzzlywumps-01.jpg" alt="Snuzzlywumps character" loading="lazy" width="300" height="300">
+                <img src="images/creative/snuzzlywumps-02.jpg" alt="Snuzzlywumps character" loading="lazy" width="300" height="300">
+                <img src="images/creative/wumpwear-01.jpg" alt="WumpWear fashion" loading="lazy" width="300" height="300">
+            </div>
+        </div>
+        <div class="ip">
+            <h3>Stuck on Eject</h3>
+            <div class="ih"><a href="https://instagram.com/stuck_on_eject" target="_blank" rel="noopener">@stuck_on_eject</a></div>
+            <p>80s horror through a VHS filter. Tracking lines, analog warmth, and the specific dread of a tape that won't rewind.</p>
+            <div class="ipg">
+                <img src="images/creative/stuck-on-eject-01.jpg" alt="Stuck on Eject" loading="lazy" width="300" height="300">
+                <img src="images/creative/stuck-on-eject-02.jpg" alt="Stuck on Eject" loading="lazy" width="300" height="300">
+                <img src="images/creative/stuck-on-eject-03.jpg" alt="Stuck on Eject" loading="lazy" width="300" height="300">
+            </div>
+        </div>
+        <div class="ip">
+            <h3>WovenWirez</h3>
+            <div class="ih"><a href="https://instagram.com/wovenwirez" target="_blank" rel="noopener">@wovenwirez</a></div>
+            <p>The strange stuff. Bizarre, well-crafted abstract work that doesn't fit anywhere else and doesn't try to.</p>
+            <div class="ipg">
+                <img src="images/creative/wovenwirez-01.jpg" alt="WovenWirez abstract" loading="lazy" width="300" height="300">
+                <img src="images/creative/wovenwirez-02.jpg" alt="WovenWirez abstract" loading="lazy" width="300" height="300">
+                <img src="images/creative/wovenwirez-03.jpg" alt="WovenWirez abstract" loading="lazy" width="300" height="300">
+            </div>
+        </div>
+        <div class="ip">
+            <h3>CircuitSalad Art Prints</h3>
+            <div class="ih"><a href="https://circuit-dream-shop-ut0x6.myshopify.com" target="_blank" rel="noopener">Shopify Store</a></div>
+            <p>Sci-fi surrealist futurism. Premium art prints on canvas, metal, and wood. The future as imagined in 1979.</p>
+        </div>
+    </section>
+
+    <section id="games" class="sec">
+        <h2>Game Concepts (8 Total)</h2>
+        <div class="gg">
+            <div class="gc">
+                <img src="images/creative/game-gtdb.jpg" alt="GTDB card game" loading="lazy" width="480" height="270">
+                <div class="gcb"><h3>GTDB</h3><p class="gr">Deckbuilder</p><p>Your Steam library becomes a card game. 80s retro-rad aesthetic, pixel art cards generated through AI pipeline.</p><p class="st">Active development -- Godot 4.4</p></div>
+            </div>
+            <div class="gc">
+                <img src="images/creative/game-eq.jpg" alt="En:Queue game" loading="lazy" width="480" height="270">
+                <div class="gcb"><h3>En:Queue</h3><p class="gr">Narrative Simulation</p><p>A game about waiting in line. Hidden romance, 50+ characters, and the stories people tell when they have nothing else to do.</p><p class="st">97 character designs, 14+ 3D models</p></div>
+            </div>
+            <div class="gc">
+                <img src="images/creative/game-bct.jpg" alt="BCT game" loading="lazy" width="480" height="270">
+                <div class="gcb"><h3>Bloom Circuit Tides</h3><p class="gr">Aquatic Shmup</p><p>Underwater combat with bioluminescent creatures and 80+ ship designs. Pseudo-AR concept.</p><p class="st">410 visual assets, Unity prototype</p></div>
+            </div>
+            <div class="gc">
+                <img src="images/creative/game-gts.jpg" alt="GTS game" loading="lazy" width="480" height="270">
+                <div class="gcb"><h3>Gone Too Soon</h3><p class="gr">Action RPG</p><p>Three perspectives, one story. Mechs, kids, and the toyetic design language of things lost too early.</p><p class="st">IG-validated art, 3D models</p></div>
+            </div>
+        </div>
+        <p class="gm">+ 4 more concepts in various stages. Full GDDs available for serious inquiries.</p>
+    </section>
+
+    <section class="sec">
+        <h2>How I Build</h2>
+        <div class="pipe">
+            <div class="ps"><p class="sn">01 Prompt</p><img src="images/creative/pipeline-prompt.jpg" alt="AI prompt" loading="lazy" width="200" height="200"><h3>Generate</h3><p>Leonardo AI, MidJourney, or Stable Diffusion. Iterative art direction.</p></div>
+            <div class="ps"><p class="sn">02 Model</p><img src="images/creative/pipeline-3d.jpg" alt="3D conversion" loading="lazy" width="200" height="200"><h3>Convert to 3D</h3><p>Meshy for initial 3D mesh from 2D concept art.</p></div>
+            <div class="ps"><p class="sn">03 Refine</p><img src="images/creative/pipeline-blender.jpg" alt="Blender" loading="lazy" width="200" height="200"><h3>Touch Up</h3><p>Blender for small edits and cleanup. Meshy for rigging.</p></div>
+            <div class="ps"><p class="sn">04 Test</p><img src="images/creative/pipeline-engine.jpg" alt="Game engine" loading="lazy" width="200" height="200"><h3>Prototype</h3><p>Godot or Unity for playable, testable builds.</p></div>
+        </div>
+        <p class="ph">This gets me from idea to testable prototype. I learn the tools as I need them -- not an expert in any single one, but fluent enough to ship.</p>
+    </section>
+
+    <section class="sec">
+        <h2>Selected Art</h2>
+        <p class="gn" style="margin-bottom:1rem">AI generates, I direct. This is iterative art direction -- knowing what to ask for, how to refine it, and when to stop.</p>
+        <div class="galg">
+            <img src="images/creative/gallery-01.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+            <img src="images/creative/gallery-02.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+            <img src="images/creative/gallery-03.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+            <img src="images/creative/gallery-04.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+            <img src="images/creative/gallery-05.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+            <img src="images/creative/gallery-06.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+            <img src="images/creative/gallery-07.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+            <img src="images/creative/gallery-08.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+        </div>
+        <p class="gn" style="margin-top:1rem">More: <a href="https://instagram.com/sirkitstevens" target="_blank" rel="noopener">@sirkitstevens</a></p>
+    </section>
+
+    <section class="sec">
+        <h2>Tools</h2>
+        <div class="tl">
+            <span class="tt">Leonardo AI</span><span class="tt">MidJourney</span><span class="tt">Stable Diffusion</span><span class="tt">Runway</span><span class="tt">Meshy 3D</span><span class="tt">Blender</span><span class="tt">Godot 4.4</span><span class="tt">Unity</span><span class="tt">Aseprite</span><span class="tt">Figma</span><span class="tt">Adobe Photoshop</span><span class="tt">Claude</span><span class="tt">ChatGPT</span><span class="tt">Gemini</span>
+        </div>
+    </section>
+
+    <section class="sec av">
+        <h2>Available For</h2>
+        <h3>Collaboration</h3>
+        <p class="bl">Open to indie game collaborations, character commissions, and creative partnerships.</p>
+        <p>I work best with people who value weird over safe.</p>
+        <h3>Starting Rates</h3>
+        <div class="pg">
+            <p><strong>Character concept:</strong> $300+</p><p><strong>Character sheet (3 poses):</strong> $600+</p>
+            <p><strong>AI illustration:</strong> $150+</p><p><strong>Content pack (5 pieces):</strong> $500+</p>
+            <p><strong>Brand identity:</strong> $400+</p><p><strong>Creative direction:</strong> $75-100/hr</p>
+        </div>
+        <p style="margin-top:.75rem;font-size:.85rem;color:var(--muted)">Rates are starting points. Flexible for indie projects I believe in.</p>
+        <h3>Contact</h3>
+        <p><a href="mailto:gardendevito@hotmail.com">gardendevito@hotmail.com</a> &middot; <a href="https://instagram.com/sirkitstevens" target="_blank" rel="noopener">@sirkitstevens</a></p>
+    </section>
+
+    <section class="sec">
+        <h2>FAQ</h2>
+        <div class="fq"><h3>Do you take NSFW/adult projects?</h3><p>Selectively. If your project has aesthetic vision, let's talk.</p></div>
+        <div class="fq"><h3>Turnaround?</h3><p>1-2 weeks. Rush jobs +50%.</p></div>
+        <div class="fq"><h3>Small budgets?</h3><p>If your project is cool and you're not a jerk, I'm open to conversation.</p></div>
+    </section>
+</div>
+<footer><div class="c"><p>John Steven Wilson / SirKit Stevens -- 2026</p><p class="as">Also see: <a href="evaluator.html">AI Evaluator --&gt;</a></p></div></footer>
+</body>
+</html>
