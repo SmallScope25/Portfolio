@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SirKit Stevens | Games, Characters, and Worlds</title>
     <meta name="description" content="Original character IPs, game concepts, AI-augmented art, and retro-futuristic design.">
+    <link rel="stylesheet" href="css/style-enhanced.css">
     <style>
-        :root{--bg:#0e0e0e;--card:#1a1a1a;--hover:#242424;--text:#e8e2dc;--muted:#8a8580;--accent:#FF7D45;--accent2:#ff9966;--teal:#1281A3;--yellow:#F5D547;--border:#2a2a2a;--mono:'Cascadia Code','Consolas','Courier New',monospace;--sans:'Segoe UI',system-ui,-apple-system,sans-serif;--max:960px}
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:var(--sans);line-height:1.6;color:var(--text);background:var(--bg)}
-        a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}
-        .c{max-width:var(--max);margin:0 auto;padding:0 1.5rem}
+        /* Creative page specific styles */
         .nav{padding:1.5rem 0;font-family:var(--mono);font-size:.75rem;letter-spacing:.05em}
         .hdr{padding:2rem 0 3rem;border-bottom:1px solid var(--border)}
         .hdr h1{font-family:var(--mono);font-size:1.8rem;font-weight:700;color:var(--accent);margin-bottom:.25rem}
         .hdr .sub{font-family:var(--mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
         .sec{padding:2.5rem 0;border-bottom:1px solid var(--border)}
         .sec h2{font-family:var(--mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem}
-        .ip{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1.5rem;margin-bottom:1rem}
+        .ip{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1.5rem;margin-bottom:1rem;transition:all 0.3s ease}
+        .ip:hover{border-color:var(--accent);box-shadow:0 4px 12px rgba(255,125,69,0.1)}
         .ip h3{font-family:var(--mono);font-size:.85rem;color:var(--accent);margin-bottom:.25rem}
         .ip .ih{font-family:var(--mono);font-size:.7rem;color:var(--teal);margin-bottom:.75rem}
         .ip p{font-size:.95rem;color:var(--muted);margin-bottom:1rem}
         .ipg{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin-bottom:.75rem}
-        .ipg img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px;background:var(--bg)}
+        .ipg img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px;background:var(--bg);border:1px solid var(--border);transition:all 0.3s ease}
+        .ipg img:hover{transform:scale(1.05);border-color:var(--accent)}
         .gg{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
-        .gc{background:var(--card);border:1px solid var(--border);border-radius:4px;overflow:hidden}
+        .gc{background:var(--card);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:all 0.3s ease}
+        .gc:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 4px 16px rgba(255,125,69,0.15)}
         .gc img{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--bg);display:block}
         .gcb{padding:1.25rem}
         .gc h3{font-family:var(--mono);font-size:.85rem;color:var(--accent);margin-bottom:.25rem}
@@ -33,31 +33,18 @@
         .gc .st{font-family:var(--mono);font-size:.65rem;color:var(--yellow);margin-top:.5rem}
         .gm{margin-top:1rem;font-size:.95rem;color:var(--muted)}
         .pipe{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}
-        .ps{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1.25rem;text-align:center}
+        .ps{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1.25rem;text-align:center;transition:all 0.3s ease}
+        .ps:hover{border-color:var(--accent);transform:translateY(-2px)}
         .ps .sn{font-family:var(--mono);font-size:.65rem;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.5rem}
         .ps h3{font-family:var(--mono);font-size:.85rem;margin-bottom:.5rem}
         .ps p{font-size:.8rem;color:var(--muted);line-height:1.4}
-        .ps img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px;margin-bottom:.75rem;background:var(--bg)}
+        .ps img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px;margin-bottom:.75rem;background:var(--bg);border:1px solid var(--border)}
         .ph{margin-top:1rem;font-size:.9rem;color:var(--muted);font-style:italic}
         .galg{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem}
-        .galg img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px;background:var(--card)}
+        .galg img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px;background:var(--card);border:1px solid var(--border);transition:all 0.3s ease}
+        .galg img:hover{transform:scale(1.05);border-color:var(--accent)}
         .gn{margin-top:1rem;font-size:.9rem;color:var(--muted)}
-        .tl{display:flex;flex-wrap:wrap;gap:.5rem}
-        .tt{background:var(--card);border:1px solid var(--border);border-radius:2px;padding:.3rem .75rem;font-family:var(--mono);font-size:.7rem;color:var(--muted)}
-        .av h3{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:.5rem;margin-top:1.5rem}
-        .av h3:first-child{margin-top:0}
-        .av p{font-size:.95rem;color:var(--muted);margin-bottom:.3rem}
-        .av .bl{color:var(--text)}
-        .pg{display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;margin-top:.75rem}
-        .pg p{font-size:.9rem;color:var(--muted)}
-        .pg strong{color:var(--text)}
-        .fq{margin-bottom:1.25rem}
-        .fq h3{font-family:var(--mono);font-size:.75rem;color:var(--text);margin-bottom:.25rem}
-        .fq p{font-size:.9rem;color:var(--muted)}
-        footer{padding:2rem 0;text-align:center}
-        footer p{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;color:var(--muted)}
-        footer .as{margin-top:.5rem;font-size:.8rem}
-        @media(max-width:640px){.gg{grid-template-columns:1fr}.pipe{grid-template-columns:repeat(2,1fr)}.galg{grid-template-columns:repeat(2,1fr)}.ipg{grid-template-columns:repeat(2,1fr)}.pg{grid-template-columns:1fr}.hdr h1{font-size:1.4rem}}
+        @media(max-width:640px){.gg{grid-template-columns:1fr}.pipe{grid-template-columns:repeat(2,1fr)}.galg{grid-template-columns:repeat(2,1fr)}.ipg{grid-template-columns:repeat(2,1fr)}.hdr h1{font-size:1.4rem}}
     </style>
 </head>
 <body>
@@ -75,9 +62,9 @@
             <div class="ih"><a href="https://instagram.com/snuzzlywumps" target="_blank" rel="noopener">@snuzzlywumps</a> &middot; <a href="https://instagram.com/wumpwear" target="_blank" rel="noopener">@wumpwear</a></div>
             <p>An original character universe. Weird, round, lovable creatures with more personality than most humans. WumpWear takes them off the screen and into the real world.</p>
             <div class="ipg">
-                <img src="images/creative/snuzzlywumps-01.jpg" alt="Snuzzlywumps character" loading="lazy" width="300" height="300">
-                <img src="images/creative/snuzzlywumps-02.jpg" alt="Snuzzlywumps character" loading="lazy" width="300" height="300">
-                <img src="images/creative/wumpwear-01.jpg" alt="WumpWear fashion" loading="lazy" width="300" height="300">
+                <img src="images/art/snuzzly-01.jpg" alt="Snuzzlywumps character" loading="lazy" width="300" height="300">
+                <img src="images/art/snuzzly-02.jpg" alt="Snuzzlywumps character" loading="lazy" width="300" height="300">
+                <img src="images/art/snuzzly-03.jpg" alt="WumpWear fashion" loading="lazy" width="300" height="300">
             </div>
         </div>
         <div class="ip">
@@ -85,9 +72,9 @@
             <div class="ih"><a href="https://instagram.com/stuck_on_eject" target="_blank" rel="noopener">@stuck_on_eject</a></div>
             <p>80s horror through a VHS filter. Tracking lines, analog warmth, and the specific dread of a tape that won't rewind.</p>
             <div class="ipg">
-                <img src="images/creative/stuck-on-eject-01.jpg" alt="Stuck on Eject" loading="lazy" width="300" height="300">
-                <img src="images/creative/stuck-on-eject-02.jpg" alt="Stuck on Eject" loading="lazy" width="300" height="300">
-                <img src="images/creative/stuck-on-eject-03.jpg" alt="Stuck on Eject" loading="lazy" width="300" height="300">
+                <img src="images/art/eject-01.jpg" alt="Stuck on Eject" loading="lazy" width="300" height="300">
+                <img src="images/art/eject-02.jpg" alt="Stuck on Eject" loading="lazy" width="300" height="300">
+                <img src="images/art/eject-03.jpg" alt="Stuck on Eject" loading="lazy" width="300" height="300">
             </div>
         </div>
         <div class="ip">
@@ -95,9 +82,9 @@
             <div class="ih"><a href="https://instagram.com/wovenwirez" target="_blank" rel="noopener">@wovenwirez</a></div>
             <p>The strange stuff. Bizarre, well-crafted abstract work that doesn't fit anywhere else and doesn't try to.</p>
             <div class="ipg">
-                <img src="images/creative/wovenwirez-01.jpg" alt="WovenWirez abstract" loading="lazy" width="300" height="300">
-                <img src="images/creative/wovenwirez-02.jpg" alt="WovenWirez abstract" loading="lazy" width="300" height="300">
-                <img src="images/creative/wovenwirez-03.jpg" alt="WovenWirez abstract" loading="lazy" width="300" height="300">
+                <img src="images/art/wirez-01.jpg" alt="WovenWirez abstract" loading="lazy" width="300" height="300">
+                <img src="images/art/wirez-02.jpg" alt="WovenWirez abstract" loading="lazy" width="300" height="300">
+                <img src="images/art/wirez-03.jpg" alt="WovenWirez abstract" loading="lazy" width="300" height="300">
             </div>
         </div>
         <div class="ip">
@@ -145,14 +132,14 @@
         <h2>Selected Art</h2>
         <p class="gn" style="margin-bottom:1rem">AI generates, I direct. This is iterative art direction -- knowing what to ask for, how to refine it, and when to stop.</p>
         <div class="galg">
-            <img src="images/creative/gallery-01.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
-            <img src="images/creative/gallery-02.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
-            <img src="images/creative/gallery-03.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
-            <img src="images/creative/gallery-04.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
-            <img src="images/creative/gallery-05.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
-            <img src="images/creative/gallery-06.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
-            <img src="images/creative/gallery-07.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
-            <img src="images/creative/gallery-08.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+            <img src="images/art/gallery-01.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+            <img src="images/art/gallery-02.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+            <img src="images/art/gallery-03.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+            <img src="images/art/gallery-04.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+            <img src="images/art/gallery-05.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+            <img src="images/art/gallery-06.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+            <img src="images/art/gallery-07.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
+            <img src="images/art/gallery-08.jpg" alt="AI-augmented art" loading="lazy" width="300" height="300">
         </div>
         <p class="gn" style="margin-top:1rem">More: <a href="https://instagram.com/sirkitstevens" target="_blank" rel="noopener">@sirkitstevens</a></p>
     </section>
