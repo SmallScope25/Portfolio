@@ -60,6 +60,7 @@
         <div class="ip">
             <h3>Snuzzlywumps + WumpWear</h3>
             <div class="ih"><a href="https://instagram.com/snuzzlywumps" target="_blank" rel="noopener">@snuzzlywumps</a> &middot; <a href="https://instagram.com/wumpwear" target="_blank" rel="noopener">@wumpwear</a></div>
+            <p style="font-style:italic;color:var(--teal);margin-bottom:.75rem">Character-driven worldbuilding with a psychedelic Saturday-morning energy.</p>
             <p>An original character universe. Weird, round, lovable creatures with more personality than most humans. WumpWear takes them off the screen and into the real world.</p>
             <div class="ipg">
                 <img src="images/art/snuzzly-01.jpg" alt="Snuzzlywumps character" loading="lazy" width="300" height="300">
@@ -70,6 +71,7 @@
         <div class="ip">
             <h3>Stuck on Eject</h3>
             <div class="ih"><a href="https://instagram.com/stuck_on_eject" target="_blank" rel="noopener">@stuck_on_eject</a></div>
+            <p style="font-style:italic;color:var(--teal);margin-bottom:.75rem">Analog horror and media-obsessed entities living in the static between channels.</p>
             <p>80s horror through a VHS filter. Tracking lines, analog warmth, and the specific dread of a tape that won't rewind.</p>
             <div class="ipg">
                 <img src="images/art/eject-01.jpg" alt="Stuck on Eject" loading="lazy" width="300" height="300">
@@ -80,6 +82,7 @@
         <div class="ip">
             <h3>WovenWirez</h3>
             <div class="ih"><a href="https://instagram.com/wovenwirez" target="_blank" rel="noopener">@wovenwirez</a></div>
+            <p style="font-style:italic;color:var(--teal);margin-bottom:.75rem">Organic-mechanical abstractions exploring pattern, geometry, and synthetic biology.</p>
             <p>The strange stuff. Bizarre, well-crafted abstract work that doesn't fit anywhere else and doesn't try to.</p>
             <div class="ipg">
                 <img src="images/art/wirez-01.jpg" alt="WovenWirez abstract" loading="lazy" width="300" height="300">
@@ -149,6 +152,49 @@
         <div class="tl">
             <span class="tt">Leonardo AI</span><span class="tt">MidJourney</span><span class="tt">Stable Diffusion</span><span class="tt">Runway</span><span class="tt">Meshy 3D</span><span class="tt">Blender</span><span class="tt">Godot 4.4</span><span class="tt">Unity</span><span class="tt">Aseprite</span><span class="tt">Figma</span><span class="tt">Adobe Photoshop</span><span class="tt">Claude</span><span class="tt">ChatGPT</span><span class="tt">Gemini</span>
         </div>
+    </section>
+
+    <section class="sec">
+        <h2>Process: GTDB Card Generation</h2>
+        <p style="margin-bottom:1.5rem;color:var(--muted)">Leonardo AI card art pipeline — 125+ pixel art character cards for Steam library deckbuilder.</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:1.5rem">
+            <img src="images/case-studies/gtdb-card-01.jpg" alt="GTDB card 1" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;border:2px solid var(--border)">
+            <img src="images/case-studies/gtdb-card-02.jpg" alt="GTDB card 2" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;border:2px solid var(--border)">
+            <img src="images/case-studies/gtdb-card-03.jpg" alt="GTDB card 3" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;border:2px solid var(--border)">
+            <img src="images/case-studies/gtdb-card-04.jpg" alt="GTDB card 4" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;border:2px solid var(--border)">
+            <img src="images/case-studies/gtdb-card-05.jpg" alt="GTDB card 5" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;border:2px solid var(--border)">
+            <img src="images/case-studies/gtdb-card-06.jpg" alt="GTDB card 6" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;border:2px solid var(--border)">
+        </div>
+        <p style="font-size:.9rem;color:var(--muted);font-style:italic;margin-bottom:1.5rem">190 GDScript files, 125 AI-generated cards, Godot 4.4 deckbuilder with Steam library integration.</p>
+
+        <details style="margin-top:2rem">
+            <summary style="cursor:pointer;font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:1rem">Early Workflow: Hand Sketch to Godot Scene</summary>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:1.5rem">
+                <div style="background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1.25rem">
+                    <p style="font-family:var(--mono);font-size:.65rem;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem">01 HAND SKETCH</p>
+                    <img src="images/case-studies/gtdb-sketch.jpg" alt="GTDB bedroom hub sketch" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px;margin-bottom:.75rem;background:var(--bg);border:1px solid var(--border)">
+                    <p style="font-size:.85rem;color:var(--muted)">Rough notebook drawing of bedroom layout, furniture placement, player flow</p>
+                </div>
+                <div style="background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1.25rem">
+                    <p style="font-family:var(--mono);font-size:.65rem;color:var(--yellow);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem">02 GODOT ITERATION</p>
+                    <img src="images/case-studies/gtdb-iteration.png" alt="GTDB Godot early version" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px;margin-bottom:.75rem;background:var(--bg);border:1px solid var(--border)">
+                    <p style="font-size:.85rem;color:var(--muted)">Early Godot scene, testing layout, refining with Claude + Otto + Aseprite</p>
+                </div>
+                <div style="background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1.25rem">
+                    <p style="font-family:var(--mono);font-size:.65rem;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem">03 FINAL SCENE</p>
+                    <img src="images/case-studies/gtdb-final.png" alt="GTDB final bedroom hub" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px;margin-bottom:.75rem;background:var(--bg);border:1px solid var(--border)">
+                    <p style="font-size:.85rem;color:var(--muted)">Polished hub world, 80s suburban bedroom aesthetic, ready for player interaction</p>
+                </div>
+            </div>
+        </details>
+    </section>
+
+    <section class="sec">
+        <h2>About</h2>
+        <p>I build worlds, test systems, and design workflows that sit somewhere between analog nostalgia and speculative futures. My creative practice moves through characters, environments, fashion, horror, and abstract geometry — all filtered through a retro-future lens I've been refining across multiple IPs.</p>
+        <p>For 25 years, I ran complex operations in breweries and concert venues. I thought I was "just" managing inventory and shipping on deadline. Turns out, I was building knowledge systems, optimizing workflows, and solving operational chaos — I just needed to redirect those skills from bar stock to creative assets. That's what this portfolio represents: operational discipline applied to creative production.</p>
+        <p>I use AI the way some people use a sketchbook: fast, iterative, exploratory. Tools like Claude, Leonardo, Meshy, and Blender help me prototype ideas at the speed they arrive — whether that's a mech-architectural structure, a psychedelic creature, or a VHS-era horror entity. I'm not chasing photorealism. I'm shaping vibes, palettes, silhouettes, and systems.</p>
+        <p>My work is equal parts storytelling and pattern recognition. I'm interested in how aesthetics evolve, how characters stay consistent across iterations, and how worlds feel lived-in even when they're synthetic. If it looks like it crawled out of a CRT monitor or a forgotten toy catalog, I'm probably into it.</p>
     </section>
 
     <section class="sec av">

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SirKit Stevens | UX/UI + Product Thinking</title>
+    <meta name="description" content="Human-centered interface design. Prescription management system, accessibility-first UX, and systems thinking applied to real-world problems.">
+    <style>
+        :root{--bg:#0e0e0e;--card:#1a1a1a;--hover:#242424;--text:#e8e2dc;--muted:#8a8580;--accent:#FF7D45;--accent2:#ff9966;--teal:#1281A3;--yellow:#F5D547;--border:#2a2a2a;--mono:'Cascadia Code','Consolas','Courier New',monospace;--sans:'Segoe UI',system-ui,-apple-system,sans-serif;--max:960px}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:var(--sans);line-height:1.6;color:var(--text);background:var(--bg)}
+        a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}
+        .c{max-width:var(--max);margin:0 auto;padding:0 1.5rem}
+        .nav{padding:1.5rem 0;font-family:var(--mono);font-size:.75rem;letter-spacing:.05em}
+        .hdr{padding:2rem 0 3rem;border-bottom:1px solid var(--border)}
+        .hdr h1{font-family:var(--mono);font-size:1.8rem;font-weight:700;color:var(--text);margin-bottom:.25rem}
+        .hdr .sub{font-family:var(--mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem}
+        .hdr .pos{font-size:1.05rem;max-width:700px;margin-bottom:1rem}
+        .sec{padding:2.5rem 0;border-bottom:1px solid var(--border)}
+        .sec h2{font-family:var(--mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem}
+        .sec h3{font-family:var(--mono);font-size:.95rem;color:var(--accent);margin-bottom:1rem;margin-top:2rem}
+        .sec h3:first-of-type{margin-top:0}
+        .cstudy{background:var(--card);border-left:3px solid var(--accent);padding:1.5rem;border-radius:0 4px 4px 0;margin-bottom:1.5rem}
+        .cstudy h4{font-size:.85rem;color:var(--teal);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem}
+        .cstudy p{font-size:.95rem;color:var(--muted);line-height:1.6;margin-bottom:.75rem}
+        .cstudy ul{margin:1rem 0 1rem 1.5rem;color:var(--muted)}
+        .cstudy li{margin-bottom:.5rem;font-size:.95rem}
+        .feat{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1.25rem;margin-bottom:1rem}
+        .feat h4{font-size:.85rem;color:var(--teal);margin-bottom:.5rem}
+        .feat p{font-size:.9rem;color:var(--muted);line-height:1.5;margin-bottom:.5rem}
+        .feat .why{font-size:.85rem;color:var(--yellow);font-style:italic;margin-top:.5rem}
+        footer{padding:2rem 0;text-align:center}
+        footer p{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;color:var(--muted)}
+        footer .as{margin-top:.5rem;font-size:.8rem}
+        @media(max-width:640px){.hdr h1{font-size:1.4rem}}
+    </style>
+</head>
+<body>
+<div class="c">
+    <nav class="nav"><a href="index.html">&lt;-- back</a></nav>
+    <header class="hdr">
+        <h1>UX / UI / Product Thinking</h1>
+        <p class="sub">Designing systems that reduce cognitive load and support real people in real contexts.</p>
+        <p class="pos">My UX work comes from lived experience — designing tools for people managing complex routines, fluctuating abilities, and high-stakes daily tasks. I approach interfaces the same way I approach games and worlds: through systems, empathy, and iteration.</p>
+        <p class="pos">Below are two projects that show how I think, how I design, and how I adapt solutions to the constraints of real users, real devices, and real environments.</p>
+    </header>
+
+    <section class="sec">
+        <h2>Primary Case Study — Prescription Management System</h2>
+        <p style="font-size:.9rem;color:var(--muted);font-style:italic;margin-bottom:1.5rem">(Name intentionally withheld for privacy)</p>
+
+        <div class="cstudy">
+            <h4>Overview</h4>
+            <p>A mobile app designed for someone close to me who manages a complex medication schedule across multiple pharmacies. This wasn't a hypothetical assignment — it was a real problem with real consequences.</p>
+            <p>The system includes a full-featured primary app for the person managing medications, and a lightweight helper app for trusted supporters. Both are designed around clarity, autonomy, and safety.</p>
+        </div>
+
+        <h3>The Problem</h3>
+        <ul style="margin:0 0 1.5rem 1.5rem;color:var(--muted);line-height:1.8">
+            <li>8+ prescriptions across multiple pharmacies</li>
+            <li>Inconsistent refill cycles and insurance coordination</li>
+            <li>Cognitive fatigue and fluctuating energy/attention</li>
+            <li>High risk if doses are missed</li>
+        </ul>
+        <p style="color:var(--muted);margin-bottom:1.5rem">Existing apps assumed medical literacy, stable devices, and perfect attention. This system needed to adapt to the user — not the other way around.</p>
+
+        <h3>The Solution</h3>
+        <p style="color:var(--muted);margin-bottom:1rem">A medication management system built around:</p>
+        <ul style="margin:0 0 1.5rem 1.5rem;color:var(--muted);line-height:1.8">
+            <li>Adaptive complexity</li>
+            <li>Accessibility-first design</li>
+            <li>Offline reliability</li>
+            <li>Caregiver coordination</li>
+            <li>Natural language setup</li>
+            <li>Device-aware performance tiers</li>
+            <li>Privacy-safe support roles</li>
+        </ul>
+        <p style="color:var(--muted);margin-bottom:2rem">Everything is designed to reduce friction and keep life-critical information visible.</p>
+
+        <h3>Key UX Innovations</h3>
+
+        <div class="feat">
+            <h4>1. Medical Personalization Engine</h4>
+            <p>A complexity slider (0–100%) that adapts the UI to the user's cognitive load and comfort level.</p>
+            <p>Low complexity → large buttons, high contrast, essentials only<br>
+            High complexity → compact controls, full medical detail</p>
+            <p class="why">Why it matters: People have different abilities on different days. The interface adjusts accordingly.</p>
+        </div>
+
+        <div class="feat">
+            <h4>2. Device Tier Adaptation</h4>
+            <p>Designed to work on anything from a budget Android to a new iPhone.</p>
+            <p>Tier 1: simple lists, minimal animations<br>
+            Tier 2: rich cards, medication photos<br>
+            Tier 3: predictive insights, pattern learning</p>
+        </div>
+
+        <div class="feat">
+            <h4>3. Thermal-Responsive Layout</h4>
+            <p>When the device overheats, the UI simplifies automatically: reduces animations, caches data, prioritizes critical functions.</p>
+        </div>
+
+        <div class="feat">
+            <h4>4. Visual Weight System</h4>
+            <p>A hierarchy based on medical priority:</p>
+            <p>Emergency protocols → Weight 10<br>
+            Medication names → Weight 8<br>
+            Schedule times → Weight 6<br>
+            Notes → Weight 3</p>
+        </div>
+
+        <div class="feat">
+            <h4>5. Progressive Disclosure</h4>
+            <p>Designed for users who benefit from reduced cognitive load.</p>
+            <p>Basic mode: "Take 2 pills now"<br>
+            Advanced mode: dosage, interactions, refill status, insurance info</p>
+        </div>
+
+        <div class="feat">
+            <h4>6. Conversational Setup</h4>
+            <p>User: "I take this twice daily with breakfast."<br>
+            App: builds the schedule, reminders, and pharmacy link automatically.</p>
+        </div>
+
+        <div class="feat">
+            <h4>7. Caregiver Access System</h4>
+            <p>Role-based permissions for real-world support networks: Primary user, Trusted supporter (helper app), Extended support (optional).</p>
+        </div>
+
+        <h3>Helper App — Companion Experience</h3>
+        <div class="cstudy">
+            <p>A lightweight companion app for trusted supporters.</p>
+            <p><strong>What it does:</strong> Receives missed-dose alerts, syncs with the primary user's reminder settings, stores no sensitive medical data, works on low-end devices.</p>
+            <p class="why">Why it matters: Medication management is rarely a solo task. This system supports real-world care networks without compromising privacy.</p>
+        </div>
+
+        <h3>Design Process</h3>
+        <ul style="margin:1rem 0 1.5rem 1.5rem;color:var(--muted);line-height:1.8">
+            <li>Real-world research with actual user</li>
+            <li>Competitive analysis (AdlerRx, ClearRx, pharmacy apps)</li>
+            <li>Cross-domain innovation (applied Figma research to medical UX)</li>
+            <li>Iterative prototyping (15+ UI revisions)</li>
+            <li>Accessibility-first design (WCAG 2.1 AA)</li>
+        </ul>
+
+        <h3>Impact</h3>
+        <ul style="margin:1rem 0 1.5rem 1.5rem;color:var(--muted);line-height:1.8">
+            <li>Improved adherence (self-reported)</li>
+            <li>Zero missed critical medications since launch</li>
+            <li>Reduced caregiver stress</li>
+            <li>Reliable on low-end hardware</li>
+            <li>Works offline</li>
+        </ul>
+    </section>
+
+    <section class="sec">
+        <h2>Secondary Case Study — DesignLab UX Foundations</h2>
+        <p style="font-size:.9rem;color:var(--muted);font-style:italic;margin-bottom:1.5rem">(Course project — branding removed intentionally)</p>
+
+        <div class="cstudy">
+            <h4>Overview</h4>
+            <p>A 6-week mentor-led UX/UI foundations course. The capstone project was a responsive website/app design focused on: user research, wireframing, interaction design, usability testing, design systems, accessibility.</p>
+            <p>Branding and app name removed to keep the focus on the design process.</p>
+        </div>
+
+        <h3>Case Study Structure</h3>
+        <div class="feat">
+            <h4>Problem</h4>
+            <p>Unclear navigation, inconsistent hierarchy, no mobile-first strategy</p>
+        </div>
+        <div class="feat">
+            <h4>Approach</h4>
+            <p>User interviews → wireframes → mobile-first redesign</p>
+        </div>
+        <div class="feat">
+            <h4>Solution</h4>
+            <p>Simplified navigation, accessible color system, consistent hierarchy</p>
+        </div>
+        <div class="feat">
+            <h4>Tools</h4>
+            <p>Figma, FigJam, Photoshop</p>
+        </div>
+    </section>
+</div>
+<footer><div class="c"><p>John Steven Wilson / SirKit Stevens — 2026</p><p class="as">Also see: <a href="evaluator.html">Evaluate AI --&gt;</a></p></div></footer>
+</body>
+</html>

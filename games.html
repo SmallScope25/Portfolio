@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SirKit Stevens | Game Design + Systems</title>
+    <meta name="description" content="Eight original game concepts exploring deckbuilders, aquatic combat, narrative sims, and mech RPGs. Game design through systems thinking and iterative prototyping.">
+    <style>
+        :root{--bg:#0e0e0e;--card:#1a1a1a;--hover:#242424;--text:#e8e2dc;--muted:#8a8580;--accent:#FF7D45;--accent2:#ff9966;--teal:#1281A3;--yellow:#F5D547;--border:#2a2a2a;--mono:'Cascadia Code','Consolas','Courier New',monospace;--sans:'Segoe UI',system-ui,-apple-system,sans-serif;--max:960px}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:var(--sans);line-height:1.6;color:var(--text);background:var(--bg)}
+        a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}
+        .c{max-width:var(--max);margin:0 auto;padding:0 1.5rem}
+        .nav{padding:1.5rem 0;font-family:var(--mono);font-size:.75rem;letter-spacing:.05em}
+        .hdr{padding:2rem 0 3rem;border-bottom:1px solid var(--border)}
+        .hdr h1{font-family:var(--mono);font-size:1.8rem;font-weight:700;color:var(--text);margin-bottom:.25rem}
+        .hdr .sub{font-family:var(--mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem}
+        .hdr .pos{font-size:1.05rem;max-width:700px;margin-bottom:1rem}
+        .sec{padding:2.5rem 0;border-bottom:1px solid var(--border)}
+        .sec h2{font-family:var(--mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem}
+        .gc{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1.5rem;margin-bottom:1rem}
+        .gc h3{font-family:var(--mono);font-size:.95rem;color:var(--accent);margin-bottom:.5rem}
+        .gc .gt{font-size:.75rem;color:var(--teal);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem}
+        .gc p{font-size:.95rem;color:var(--muted);line-height:1.6;margin-bottom:.5rem}
+        .gc .st{font-size:.85rem;color:var(--yellow);font-style:italic;margin-top:.75rem}
+        .pipe{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-bottom:1.5rem}
+        .ps{text-align:center}
+        .ps .sn{font-family:var(--mono);font-size:.65rem;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem}
+        .ps img{width:100%;max-width:200px;height:200px;object-fit:cover;border-radius:4px;border:1px solid var(--border);margin-bottom:.75rem}
+        .ps h3{font-size:.9rem;margin-bottom:.5rem}
+        .ps p{font-size:.85rem;color:var(--muted)}
+        .ph{font-size:.9rem;color:var(--muted);font-style:italic}
+        .galg{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+        .galg img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;border:1px solid var(--border)}
+        .tools{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}
+        .tool{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:.75rem 1rem;font-size:.85rem;text-align:center}
+        .collab{background:var(--card);border-left:3px solid var(--accent);padding:1.5rem;border-radius:0 4px 4px 0}
+        .collab p{font-size:.95rem;color:var(--muted);line-height:1.6;margin-bottom:.75rem}
+        .collab .cl{font-size:.95rem;margin-top:1rem}
+        footer{padding:2rem 0;text-align:center}
+        footer p{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;color:var(--muted)}
+        footer .as{margin-top:.5rem;font-size:.8rem}
+        @media(max-width:640px){.pipe{grid-template-columns:1fr 1fr}.galg{grid-template-columns:1fr 1fr}.tools{grid-template-columns:repeat(2,1fr)}}
+    </style>
+</head>
+<body>
+<div class="c">
+    <nav class="nav"><a href="index.html">&lt;-- back</a></nav>
+    <header class="hdr">
+        <h1>Games, Systems, and Play</h1>
+        <p class="sub">Eight original concepts shaped by mechanics, player psychology, and iterative prototyping.</p>
+        <p class="pos">I design games by thinking in systems — how mechanics interact, how players behave, and how ideas evolve through iteration. Across eight original concepts, I've explored deckbuilders, aquatic combat, narrative simulations, mech-driven action, and hybrid genres that sit between familiar and strange.</p>
+        <p class="pos">My process blends AI-assisted art direction with hands-on prototyping in Godot and Unity. I build fast, test early, and refine until the experience feels right.</p>
+    </header>
+    <section class="sec">
+        <h2>Original Game Concepts (8 Total)</h2>
+        <div class="gc">
+            <p class="gt">Deckbuilder</p>
+            <h3>GTDB</h3>
+            <p>A card game built from your digital library. Retro-rad energy, pixel-leaning visuals, and a ruleset shaped by the logic of how players collect and interact with games.</p>
+            <p class="st">Status: Active development — Godot 4.4</p>
+        </div>
+        <div class="gc">
+            <p class="gt">Narrative Simulation</p>
+            <h3>En:Queue</h3>
+            <p>A slice-of-life story about the small dramas that unfold when people are stuck in the same place. Dozens of characters, intersecting micro-stories, and a focus on subtle emotional beats.</p>
+            <p class="st">Status: Character library + early 3D exploration</p>
+        </div>
+        <div class="gc">
+            <p class="gt">Aquatic SHMUP</p>
+            <h3>Bloom Circuit Tides</h3>
+            <p>An underwater combat experience built around motion, glow, and rhythm. Bioluminescent creatures, modular ship silhouettes, and a pseudo-AR presentation style.</p>
+            <p class="st">Status: Visual library + Unity prototype</p>
+        </div>
+        <div class="gc">
+            <p class="gt">Action RPG</p>
+            <h3>Gone Too Soon</h3>
+            <p>A character-driven action concept inspired by the emotional weight of lost things and the playfulness of toyetic design. Shifts in perspective and tone create a layered experience — a nod to games that blend viewpoints fluidly without breaking immersion.</p>
+            <p class="st">Status: Early models + validated visual direction</p>
+        </div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1.5rem;text-align:center">
+            <p style="font-size:.9rem;color:var(--muted)"><strong>+ Four More Concepts</strong></p>
+            <p style="font-size:.85rem;color:var(--muted);margin-top:.5rem">Additional prototypes in various stages — full GDDs available for serious inquiries.</p>
+        </div>
+    </section>
+    <section class="sec">
+        <h2>How I Build</h2>
+        <div class="pipe">
+            <div class="ps">
+                <p class="sn">01 Prompt</p>
+                <img src="images/creative/pipeline-prompt.jpg" alt="AI prompt generation" loading="lazy" width="200" height="200">
+                <h3>Generate</h3>
+                <p>Iterative art direction using Leonardo AI, MidJourney, or Stable Diffusion. Exploring variations, tone, silhouette, and visual logic.</p>
+            </div>
+            <div class="ps">
+                <p class="sn">02 Model</p>
+                <img src="images/creative/pipeline-3d.jpg" alt="3D conversion" loading="lazy" width="200" height="200">
+                <h3>Convert to 3D</h3>
+                <p>Meshy for initial 3D meshes from 2D concept art. Fast iteration to test form, scale, and feasibility.</p>
+            </div>
+            <div class="ps">
+                <p class="sn">03 Refine</p>
+                <img src="images/creative/pipeline-blender.jpg" alt="Blender refinement" loading="lazy" width="200" height="200">
+                <h3>Touch Up</h3>
+                <p>Blender for cleanup, detail passes, and polish. Meshy for rigging and pose exploration.</p>
+            </div>
+            <div class="ps">
+                <p class="sn">04 Test</p>
+                <img src="images/creative/pipeline-engine.jpg" alt="Game engine testing" loading="lazy" width="200" height="200">
+                <h3>Prototype</h3>
+                <p>Godot or Unity for playable, testable builds. Mechanics, feel, and player experience come into focus here.</p>
+            </div>
+        </div>
+        <p class="ph">This pipeline gets me from idea to testable prototype. I'm fluent across tools and workflows, and I adapt quickly as each project evolves.</p>
+    </section>
+    <section class="sec">
+        <h2>Selected Game Art</h2>
+        <p style="margin-bottom:1.5rem;color:var(--muted)">AI-augmented concepts, 3D studies, and prototype visuals. This is iterative art direction — knowing what to ask for, how to refine it, and when to stop.</p>
+        <div class="galg">
+            <img src="images/art/gallery-01.jpg" alt="Game concept art" loading="lazy" width="300" height="300">
+            <img src="images/art/gallery-02.jpg" alt="Game concept art" loading="lazy" width="300" height="300">
+            <img src="images/art/gallery-03.jpg" alt="Game concept art" loading="lazy" width="300" height="300">
+            <img src="images/art/gallery-04.jpg" alt="Game concept art" loading="lazy" width="300" height="300">
+            <img src="images/art/gallery-05.jpg" alt="Game concept art" loading="lazy" width="300" height="300">
+            <img src="images/art/gallery-06.jpg" alt="Game concept art" loading="lazy" width="300" height="300">
+        </div>
+        <p style="margin-top:1rem;font-size:.85rem"><a href="https://instagram.com/sirkitstevens" target="_blank" rel="noopener">More: @sirkitstevens --&gt;</a></p>
+    </section>
+    <section class="sec">
+        <h2>Tools</h2>
+        <div class="tools">
+            <div class="tool">Leonardo AI</div>
+            <div class="tool">MidJourney</div>
+            <div class="tool">Stable Diffusion</div>
+            <div class="tool">Runway</div>
+            <div class="tool">Meshy 3D</div>
+            <div class="tool">Blender</div>
+            <div class="tool">Godot 4.4</div>
+            <div class="tool">Unity</div>
+            <div class="tool">Aseprite</div>
+            <div class="tool">Figma</div>
+            <div class="tool">Photoshop</div>
+            <div class="tool">Claude</div>
+            <div class="tool">ChatGPT</div>
+            <div class="tool">Gemini</div>
+        </div>
+    </section>
+    <section class="sec">
+        <h2>Collaboration</h2>
+        <div class="collab">
+            <p>I'm open to conversations about indie game collaborations, concept development, or creative partnerships — especially with teams who value curiosity, experimentation, and a willingness to explore the weird corners of an idea.</p>
+            <p>If your project is ambitious, unusual, or mechanically interesting, I'm always open to talking.</p>
+            <p class="cl"><a href="mailto:gardendevito@hotmail.com">gardendevito@hotmail.com</a> &middot; <a href="https://instagram.com/sirkitstevens" target="_blank" rel="noopener">@sirkitstevens</a></p>
+        </div>
+    </section>
+</div>
+<footer><div class="c"><p>John Steven Wilson / SirKit Stevens — 2026</p><p class="as">Also see: <a href="worlds.html">Create Worlds --&gt;</a></p></div></footer>
+</body>
+</html>
