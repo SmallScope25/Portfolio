@@ -26,7 +26,13 @@
     box-sizing: border-box;
 }
 
+html {
+    background: url('../images/art/sidebar-bg.jpg') center/cover fixed #0e0e0e;
+}
+
 body {
+    max-width: var(--max);
+    margin: 0 auto;
     font-family: var(--sans);
     line-height: 1.6;
     color: var(--text);
