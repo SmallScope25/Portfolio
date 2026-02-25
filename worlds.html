@@ -8,7 +8,8 @@
     <style>
         :root{--bg:#0e0e0e;--card:#1a1a1a;--hover:#242424;--text:#e8e2dc;--muted:#8a8580;--accent:#FF7D45;--accent2:#ff9966;--teal:#1281A3;--yellow:#F5D547;--border:#2a2a2a;--mono:'Cascadia Code','Consolas','Courier New',monospace;--sans:'Segoe UI',system-ui,-apple-system,sans-serif;--max:960px}
         *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:var(--sans);line-height:1.6;color:var(--text);background:var(--bg)}
+        html{background:url('images/art/sidebar-bg.jpg') center/cover fixed #0e0e0e}
+        body{font-family:var(--sans);line-height:1.6;color:var(--text);background:var(--bg);max-width:var(--max);margin:0 auto}
         a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}
         .c{max-width:var(--max);margin:0 auto;padding:0 1.5rem}
         .nav{padding:1.5rem 0;font-family:var(--mono);font-size:.75rem;letter-spacing:.05em}
@@ -26,6 +27,7 @@
         .ip .links a{margin-right:1rem;color:var(--accent)}
         .thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin-top:1rem}
         .thumbs img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;border:1px solid var(--border)}
+        .ip:nth-of-type(2) .thumbs img{object-position:top}
         .process{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-bottom:1.5rem}
         .pstep{text-align:center}
         .pstep .pn{font-family:var(--mono);font-size:.65rem;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem}
@@ -61,6 +63,11 @@
             <p class="ipt">Experimental Visual Worlds</p>
             <p>The broader spectrum of my creative output — fashion concepts, claymation-style renders, poster art, sculpture-like pieces, surreal portraits, retro-future prints, and one-off experiments.</p>
             <p>Some are guided, some are iterative, some are happy accidents — all part of the same evolving visual language.</p>
+            <div class="thumbs">
+                <img src="images/art/sirkit-poster-01.jpg" alt="SirKit retro geometric print" loading="lazy" width="150" height="150">
+                <img src="images/art/sirkit-poster-02.jpg" alt="SirKit graphic poster art" loading="lazy" width="150" height="150">
+                <img src="images/art/sirkit-poster-03.jpg" alt="SirKit retro landscape print" loading="lazy" width="150" height="150">
+            </div>
             <div class="links">
                 <a href="https://instagram.com/sirkitstevens" target="_blank" rel="noopener">→ Main Range</a>
                 <a href="#" style="color:var(--yellow);cursor:not-allowed">→ Etsy Shop Coming Soon</a>
@@ -72,13 +79,13 @@
             <p class="ipt">Character Universe + Fashion Identity</p>
             <p>Weird, round, lovable creatures with more personality than most humans. WumpWear extends the universe into fashion — retro palettes, bold silhouettes, and a playful sense of self-expression.</p>
             <div class="thumbs">
-                <img src="images/art/snuzzly-01.jpg" alt="Snuzzlywumps characters" loading="lazy" width="150" height="150">
-                <img src="images/art/snuzzly-02.jpg" alt="Snuzzlywumps characters" loading="lazy" width="150" height="150">
-                <img src="images/art/snuzzly-03.jpg" alt="Snuzzlywumps character" loading="lazy" width="150" height="150">
+                <img src="images/art/snuzzly-01.jpg" alt="Snuzzlywumps characters" loading="lazy" width="150" height="150" style="object-position:top">
+                <img src="images/art/snuzzly-02.jpg" alt="Snuzzlywumps characters" loading="lazy" width="150" height="150" style="object-position:top">
+                <img src="images/art/snuzzly-03.jpg" alt="Snuzzlywumps character" loading="lazy" width="150" height="150" style="object-position:top">
             </div>
             <div class="links">
                 <a href="https://instagram.com/snuzzlywumps" target="_blank" rel="noopener">→ Creatures</a>
-                <a href="https://instagram.com/suzzlyfashion" target="_blank" rel="noopener">→ Fashion</a>
+                <a href="https://instagram.com/snuzzlyfashion" target="_blank" rel="noopener">→ Fashion</a>
             </div>
         </div>
 
@@ -141,15 +148,15 @@
         <h2>Selected Art</h2>
         <p style="margin-bottom:1.5rem;color:var(--muted)">AI-augmented concepts, character studies, fashion identities, surreal abstractions, and worldbuilding fragments. This is iterative art direction — knowing what to ask for, how to refine it, and when to stop.</p>
         <div class="galg">
-            <img src="images/art/snuzzly-01.jpg" alt="Snuzzlywumps character" loading="lazy" width="300" height="300">
-            <img src="images/art/snuzzly-02.jpg" alt="Snuzzlywumps character" loading="lazy" width="300" height="300">
-            <img src="images/art/snuzzly-03.jpg" alt="Snuzzlywumps character" loading="lazy" width="300" height="300">
-            <img src="images/art/eject-01.jpg" alt="Stuck on Eject art" loading="lazy" width="300" height="300">
-            <img src="images/art/eject-02.jpg" alt="Stuck on Eject art" loading="lazy" width="300" height="300">
-            <img src="images/art/eject-03.jpg" alt="Stuck on Eject art" loading="lazy" width="300" height="300">
-            <img src="images/art/wirez-01.jpg" alt="WovenWirez abstract" loading="lazy" width="300" height="300">
-            <img src="images/art/wirez-02.jpg" alt="WovenWirez abstract" loading="lazy" width="300" height="300">
-            <img src="images/art/wirez-03.jpg" alt="WovenWirez abstract" loading="lazy" width="300" height="300">
+            <img src="images/art/sirkit-fashion-01.jpg" alt="SirKit fashion concept" loading="lazy" width="300" height="300">
+            <img src="images/art/sirkit-fashion-02.jpg" alt="SirKit fashion concept" loading="lazy" width="300" height="300">
+            <img src="images/art/sirkit-fashion-03.jpg" alt="SirKit fashion concept" loading="lazy" width="300" height="300">
+            <img src="images/art/sirkit-fashion-04.jpg" alt="SirKit fashion concept" loading="lazy" width="300" height="300">
+            <img src="images/art/sirkit-fashion-05.jpg" alt="SirKit fashion concept" loading="lazy" width="300" height="300">
+            <img src="images/art/sirkit-gallery-01.jpg" alt="SirKit poster art" loading="lazy" width="300" height="300">
+            <img src="images/art/sirkit-gallery-02.jpg" alt="SirKit abstract texture" loading="lazy" width="300" height="300">
+            <img src="images/art/sirkit-gallery-03.jpg" alt="SirKit atmospheric space" loading="lazy" width="300" height="300">
+            <img src="images/art/sirkit-poster-03.jpg" alt="SirKit retro landscape" loading="lazy" width="300" height="300">
         </div>
         <p style="margin-top:1rem;font-size:.85rem"><a href="https://instagram.com/sirkitstevens" target="_blank" rel="noopener">More: @sirkitstevens --&gt;</a></p>
     </section>
