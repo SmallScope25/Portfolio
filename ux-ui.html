@@ -52,115 +52,84 @@
 
     <section class="sec">
         <h2>Primary Case Study — Prescription Management System</h2>
-        <p style="font-size:.9rem;color:var(--muted);font-style:italic;margin-bottom:1.5rem">(Name intentionally withheld for privacy)</p>
+        <p style="font-size:.9rem;color:var(--muted);font-style:italic;margin-bottom:1.5rem">(Name withheld for privacy)</p>
 
         <div class="cstudy">
             <h4>Overview</h4>
-            <p>A mobile app designed for someone close to me who manages a complex medication schedule across multiple pharmacies. This wasn't a hypothetical assignment — it was a real problem with real consequences.</p>
-            <p>The system includes a full-featured primary app for the person managing medications, and a lightweight helper app for trusted supporters. Both are designed around clarity, autonomy, and safety.</p>
+            <p>A mobile app designed for an individual managing a complex medication routine across multiple pharmacies. This was a real, high-stakes problem: fluctuating energy, cognitive load, inconsistent refill cycles, and the risk of missed doses.</p>
+            <p>The system includes a full-featured primary app and a lightweight companion app for trusted supporters.</p>
+        </div>
+
+        <div class="img-strip" style="grid-template-columns:repeat(3,1fr)">
+            <figure>
+                <img src="images/case-studies/rx-concept.jpg" alt="RX Manager concept and early wireframes">
+                <figcaption>concept + research</figcaption>
+            </figure>
+            <figure>
+                <img src="images/case-studies/rx-iteration.jpg" alt="RX Manager design iterations">
+                <figcaption>design iterations</figcaption>
+            </figure>
+            <figure>
+                <img src="images/case-studies/rx-final.jpg" alt="RX Manager final UI">
+                <figcaption>final interface</figcaption>
+            </figure>
         </div>
 
         <h3>The Problem</h3>
-        <ul style="margin:0 0 1.5rem 1.5rem;color:var(--muted);line-height:1.8">
-            <li>8+ prescriptions across multiple pharmacies</li>
-            <li>Inconsistent refill cycles and insurance coordination</li>
-            <li>Cognitive fatigue and fluctuating energy/attention</li>
-            <li>High risk if doses are missed</li>
+        <p style="color:var(--muted);margin-bottom:1rem">The user's daily routine involved 8+ prescriptions, multiple pharmacies, shifting schedules, and limited attention bandwidth. Existing apps assumed stable devices, high medical literacy, and perfect adherence.</p>
+        <p style="color:var(--muted);margin-bottom:1.5rem">The challenge was to create a system that adapts to the user — not the other way around.</p>
+
+        <h3>Research &amp; Insights</h3>
+        <ul style="margin:0 0 1rem 1.5rem;color:var(--muted);line-height:1.8">
+            <li>Real-world observation of daily medication management</li>
+            <li>Competitive analysis of accessibility-focused apps</li>
+            <li>Identification of friction points in reminders, refill tracking, and cognitive overload</li>
+            <li>Recognition that support networks play a critical role in adherence</li>
         </ul>
-        <p style="color:var(--muted);margin-bottom:1.5rem">Existing apps assumed medical literacy, stable devices, and perfect attention. This system needed to adapt to the user — not the other way around.</p>
+        <div class="feat">
+            <h4>Key Insight</h4>
+            <p>The interface needed to flex with the user's cognitive state, device performance, and real-world constraints.</p>
+        </div>
 
-        <h3>The Solution</h3>
-        <p style="color:var(--muted);margin-bottom:1rem">A medication management system built around:</p>
+        <h3>Design Approach</h3>
         <ul style="margin:0 0 1.5rem 1.5rem;color:var(--muted);line-height:1.8">
-            <li>Adaptive complexity</li>
-            <li>Accessibility-first design</li>
-            <li>Offline reliability</li>
-            <li>Caregiver coordination</li>
-            <li>Natural language setup</li>
-            <li>Device-aware performance tiers</li>
-            <li>Privacy-safe support roles</li>
+            <li>Mobile-first wireframes to establish clarity</li>
+            <li>Iterative prototyping with 15+ rounds of feedback</li>
+            <li>Cross-domain inspiration from design systems and natural-language tools</li>
+            <li>Accessibility-first decisions (contrast, touch targets, screen reader support)</li>
+            <li>Offline-first architecture to support unreliable connectivity</li>
         </ul>
-        <p style="color:var(--muted);margin-bottom:2rem">Everything is designed to reduce friction and keep life-critical information visible.</p>
 
-        <h3>Key UX Innovations</h3>
-
-        <div class="feat">
-            <h4>1. Medical Personalization Engine</h4>
-            <p>A complexity slider (0–100%) that adapts the UI to the user's cognitive load and comfort level.</p>
-            <p>Low complexity → large buttons, high contrast, essentials only<br>
-            High complexity → compact controls, full medical detail</p>
-            <p class="why">Why it matters: People have different abilities on different days. The interface adjusts accordingly.</p>
-        </div>
-
-        <div class="feat">
-            <h4>2. Device Tier Adaptation</h4>
-            <p>Designed to work on anything from a budget Android to a new iPhone.</p>
-            <p>Tier 1: simple lists, minimal animations<br>
-            Tier 2: rich cards, medication photos<br>
-            Tier 3: predictive insights, pattern learning</p>
-        </div>
-
-        <div class="feat">
-            <h4>3. Thermal-Responsive Layout</h4>
-            <p>When the device overheats, the UI simplifies automatically: reduces animations, caches data, prioritizes critical functions.</p>
-        </div>
-
-        <div class="feat">
-            <h4>4. Visual Weight System</h4>
-            <p>A hierarchy based on medical priority:</p>
-            <p>Emergency protocols → Weight 10<br>
-            Medication names → Weight 8<br>
-            Schedule times → Weight 6<br>
-            Notes → Weight 3</p>
-        </div>
-
-        <div class="feat">
-            <h4>5. Progressive Disclosure</h4>
-            <p>Designed for users who benefit from reduced cognitive load.</p>
-            <p>Basic mode: "Take 2 pills now"<br>
-            Advanced mode: dosage, interactions, refill status, insurance info</p>
-        </div>
-
-        <div class="feat">
-            <h4>6. Conversational Setup</h4>
-            <p>User: "I take this twice daily with breakfast."<br>
-            App: builds the schedule, reminders, and pharmacy link automatically.</p>
-        </div>
-
-        <div class="feat">
-            <h4>7. Caregiver Access System</h4>
-            <p>Role-based permissions for real-world support networks: Primary user, Trusted supporter (helper app), Extended support (optional).</p>
-        </div>
+        <h3>Key Features</h3>
+        <ul style="margin:0 0 1.5rem 1.5rem;color:var(--muted);line-height:2">
+            <li><strong style="color:var(--text)">Medical Personalization Engine</strong> &mdash; Complexity slider adapts UI density to the user's cognitive load</li>
+            <li><strong style="color:var(--text)">Device Tier Adaptation</strong> &mdash; Scales visuals and features from low-end to high-end devices</li>
+            <li><strong style="color:var(--text)">Thermal-Responsive Layout</strong> &mdash; Simplifies UI automatically when the device overheats</li>
+            <li><strong style="color:var(--text)">Visual Weight System</strong> &mdash; Prioritizes life-critical information over supporting detail</li>
+            <li><strong style="color:var(--text)">Progressive Disclosure</strong> &mdash; Basic vs. advanced modes for cognitive flexibility</li>
+            <li><strong style="color:var(--text)">Conversational Setup</strong> &mdash; Natural-language input for schedule and reminder creation</li>
+            <li><strong style="color:var(--text)">Caregiver Access System</strong> &mdash; Role-based permissions for real-world support networks</li>
+        </ul>
 
         <h3>Helper App — Companion Experience</h3>
         <div class="cstudy">
-            <p>A lightweight companion app for trusted supporters.</p>
-            <p><strong>What it does:</strong> Receives missed-dose alerts, syncs with the primary user's reminder settings, stores no sensitive medical data, works on low-end devices.</p>
-            <p class="why">Why it matters: Medication management is rarely a solo task. This system supports real-world care networks without compromising privacy.</p>
+            <p>A lightweight secondary app for trusted supporters. It receives missed-dose alerts, syncs with the primary user's reminder settings, and stores no sensitive data. Designed for low-end devices and minimal cognitive load.</p>
         </div>
-
-        <h3>Design Process</h3>
-        <ul style="margin:1rem 0 1.5rem 1.5rem;color:var(--muted);line-height:1.8">
-            <li>Real-world research with actual user</li>
-            <li>Competitive analysis (AdlerRx, ClearRx, pharmacy apps)</li>
-            <li>Cross-domain innovation (applied Figma research to medical UX)</li>
-            <li>Iterative prototyping (15+ UI revisions)</li>
-            <li>Accessibility-first design (WCAG 2.1 AA)</li>
-        </ul>
 
         <h3>Impact</h3>
         <ul style="margin:1rem 0 1.5rem 1.5rem;color:var(--muted);line-height:1.8">
             <li>Improved adherence (self-reported)</li>
             <li>Zero missed critical medications since launch</li>
             <li>Reduced caregiver stress</li>
-            <li>Reliable on low-end hardware</li>
-            <li>Works offline</li>
+            <li>Reliable performance on low-end hardware</li>
+            <li>Fully functional offline</li>
         </ul>
     </section>
 
     <section class="sec">
         <h2>Secondary Case Study — Responsive Travel Service Redesign</h2>
         <p style="font-size:.9rem;color:var(--muted);font-style:italic;margin-bottom:1.5rem">(Course project — original branding removed intentionally)</p>
+        <p style="font-size:.95rem;color:var(--muted);border-left:2px solid var(--teal);padding-left:1rem;margin-bottom:1.5rem">This project demonstrates foundational UX skills — mobile-first wireframing, responsive layout design, and basic design system creation.</p>
 
         <div class="cstudy">
             <h4>Overview</h4>
@@ -237,6 +206,7 @@
         </div>
     </section>
 </div>
+<section style="padding:2rem 0;text-align:center"><p style="font-size:.95rem;color:var(--muted)">For more work across games, worlds, and systems, <a href="index.html">explore the rest of my portfolio</a>.</p></section>
 <footer><div class="c"><p>John Steven Wilson / SirKit Stevens — 2026</p><p class="as">Also see: <a href="evaluator.html">Evaluate AI --&gt;</a></p></div></footer>
 </body>
 </html>
