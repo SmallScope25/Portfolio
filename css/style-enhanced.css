@@ -395,6 +395,11 @@ footer p {
     color: var(--muted);
 }
 
+/* Footer Icons */
+.fi{display:flex;gap:1.25rem;justify-content:center;margin:.75rem 0}
+.fi a{color:var(--accent);display:flex;align-items:center;transition:color .2s}
+.fi a:hover{color:var(--teal)}
+
 /* Responsive */
 @media (max-width: 640px) {
     .pills {
